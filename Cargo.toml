@@ -1,0 +1,17 @@
+[dependencies]
+actix-web = "4"
+actix-multipart = "0.6"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "fs"] }
+dotenvy = "0.15"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Choose one of the IPFS client libraries:
+ipfs-api-backend-hyper = "0.6" # Using ipfs-api with Hyper backend
+# rust-ipfs = "0.14"
+
+# Choose one of the Ethereum interaction libraries:
+alloy-rs = { version = "0.13", features = ["providers", "rpc-client", "transport-http", "sol-types", "json", "contract", "rpc-types", "rpc-types-eth", "network", "signers", "signer-local"] }
+# ethers = { version = "2.0", features = ["full"] }
+
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
